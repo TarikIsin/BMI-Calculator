@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/BMICalculator"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="124dp"
+        android:gravity="center"
+        android:text="Body Mass Index Calculator"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="Height"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/heightText"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMICalculator" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="188dp"
+        android:gravity="center"
+        android:text="Weight"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/heightText"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMICalculator"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/heightText"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Height(cm)"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMICalculator" />
+
+    <EditText
+        android:id="@+id/weightText"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Weight(kg)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMICalculator"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightText" />
+
+    <TextView
+        android:id="@+id/failMessage"
+        android:layout_width="280dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
